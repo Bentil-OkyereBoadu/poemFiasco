@@ -1,0 +1,16 @@
+$ git checkout HEAD road-not-taken.txt
+$ git checkout -- oven-bird.txt
+$ git diff fire-and-ice.txt
+$ git add road-not-taken.txt oven-bird.txt fire-and-ice.txt
+$ git reset HEAD fire-and-ice.txt
+Unstaged changes after reset:
+M       fire-and-ice.txt
+$ git commit -m "commit road-not-taken and oven-bird"
+[master f306057] commit road-not-taken and oven-bird
+ 2 files changed, 2 insertions(+)
+$ git add fire-and-ice.txt road-not-taken.txt oven-bird.txt
+$ git commit -m "all 3 files"
+[master 7b622f6] all 3 files
+ 3 files changed, 10 insertions(+), 2 deletions(-)
+$ git reset HEAD fire-and-ice.txt road-not-taken.txt oven-bird.txt
+$ git checkout HEAD fire-and-ice.txt road-not-taken.txt oven-bird.txt
